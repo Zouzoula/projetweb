@@ -21,15 +21,24 @@
         </nav>
     </header>
     <main>
-        <h2>Connexion</h2>
-        <form action="#" method="post">
-            <label for="username">Nom d'utilisateur:</label>
+        <h2>Inscription</h2>
+        <form action="votre_script_d_inscription.php" method="post">
+            <label for="username">Nom d'utilisateur</label>
             <input type="text" id="username" name="username" required>
             <br>
-            <label for="password">Mot de passe:</label>
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Mot de passe</label>
             <input type="password" id="password" name="password" required>
             <br>
-            <button type="submit">Se connecter</button>
+            <label for="confirm_password">Confirmer le mot de passe</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+            <br>
+            <input type="submit" value="S'inscrire">
         </form>
     </main>
     <footer>
