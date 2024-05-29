@@ -71,10 +71,16 @@ footer p {
 
 .content-section h2 {
     margin-bottom: 10px;
+    font-family: 'RealMadrid', sans-serif;
+    color: #00529F
 }
 
 .content-section p {
     margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'RealMadrid', sans-serif;
 }
 
 /* Connection et Inscription */
