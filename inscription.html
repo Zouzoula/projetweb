@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion - Madridistas</title>
+    <title>Inscription - Madridistas</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
+        <img src="images/Logo_Real_Madrid.png" alt="Logo_Real_Madrid" width="50px">
+        <img src="images/14_ldc.png" alt="Logo_LDC" width="60px">
         <h1>Madridistas</h1>
         <nav>
             <ul>
@@ -24,29 +26,35 @@
         <section id="inscription">
             <h2>Inscription</h2>
             <form action="votre_script_d_inscription.php" method="post">
-                <label for="username">Nom d'utilisateur</label>
-                <input type="text" id="username" name="username" required>
-                <br>
-                <label for="age">Age</label>
-                <input type="text" id="age" name="age">
-                <br>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                <label for="password">Mot de passe</label>
-                <input type="password" id="password" name="password" required>
-                <br>
-                <label for="confirm_password">Confirmer le mot de passe</label>
-                <input type="password" id="confirm_password" name="confirm_password" required>
-                <br>
-                <input type="submit" value="S'inscrire">
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur :</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age :</label>
+                    <input type="text" id="age" name="age">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirmer le mot de passe :</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">S'inscrire</button>
+                </div>
             </form>
         </section>
     </main>
-    <footer>
-        <section id="footer-content">
-            <p>&copy; 2024 Madridistas. Tous droits réservés.</p>
-        </section>
+    <footer id="footer-content">
+        <a href="https://www.realmadrid.com/"><img src="images/Logo_Real_Madrid.png" alt="Logo_Real_Madrid" width="50px"></a>
+        <p>&copy; 2024 Madridistas. Tous droits réservés.</p>
     </footer>
 </body>
 </html>

@@ -1,24 +1,49 @@
+@font-face {
+    font-family: 'RealMadrid';
+    src: url('/css/real-madrid-2022.woff2') format('woff2'),
+         url('/css/real-madrid-2022.ttf') format('truetype');
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background-color: #333;
+    font-family: 'RealMadrid', sans-serif;
+    font-size: large;
+    background-color: #00529F;
     color: white;
-    padding: 1em 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    margin-right: 10px;
+}
+
+header h1 {
+    flex-grow: 1;
     text-align: center;
+    margin: 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 1em;
 }
 
@@ -28,17 +53,315 @@ nav ul li a {
 }
 
 main {
-    padding: 1em;
+    padding: 2em 1em;
     margin: 2em auto;
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#inscription {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+#inscription h2 {
+    text-align: center;
+    color: #00529F;
+    margin-bottom: 1.5em;
+}
+
+#login {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+#login h2 {
+    text-align: center;
+    color: #00529F;
+    margin-bottom: 1.5em;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 0.75em;
+    background-color: #00529F;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #004080;
+}
+
+#videos {
+    width: 100%;
     max-width: 800px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+#videos h2 {
+    text-align: center;
+    color: #00529F;
+    margin-bottom: 1.5em;
+}
+
+.video-item {
+    margin-bottom: 2em;
+}
+
+.video-item h4 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 0.5em;
+}
+
+.video-item p {
+    color: #666;
+}
+
+#next-matches {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+#next-matches h2 {
+    text-align: center;
+    color: #00529F;
+    margin-bottom: 1.5em;
+}
+
+.matches-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.match-item {
+    background: #f9f9f9;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.match-item .date,
+.match-item .hour,
+.match-item .opponent,
+.match-item .competition {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.match-item .date,
+.match-item .hour {
+    color: #00529F;
+    font-weight: bold;
+}
+
+.match-item .opponent {
+    color: #333;
+}
+
+.match-item .competition {
+    color: #666;
+}
+
+#players {
+    width: 100%;
+    max-width: 1000px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 2em;
+    box-sizing: border-box;
+}
+
+#players h2 {
+    text-align: center;
+    color: #00529F;
+    margin-bottom: 1.5em;
+}
+
+#players .coach,
+#players .player-category {
+    margin-bottom: 2em;
+}
+
+.player-category h3 {
+    color: #00529F;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #00529F;
+    padding-bottom: 0.5em;
+}
+
+#team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    grid-template-rows: auto; /* Hauteur automatique */
+    gap: 10px; /* Espace entre les éléments */
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre les éléments verticalement */
+    width: 100%; /* Ajustez la largeur selon vos besoins */
+    height: 400px; /* Ajustez la hauteur selon vos besoins */
+    background-image: url('chemin/vers/votre/image-de-terrain.jpg'); /* Remplacez le chemin par l'image de votre terrain */
+    background-size: cover; /* Ajustez la taille de l'image pour couvrir la totalité du conteneur */
+    background-position: center; /* Centre l'image dans le conteneur */
+}
+
+#team img {
+    max-width: 100%;
+    height: auto;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+
+
+.player img {
+    margin-left: 1em;
+    border-radius: 8px;
+    width: 80px;
+    height: auto;
 }
 
 footer {
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
     width: 100%;
-    bottom: 0;
+    margin-top: auto;
+}
+
+footer img {
+    margin-right: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.content-section {
+    margin-bottom: 20px;
+}
+ 
+.content-section h2 {
+    margin-bottom: 10px;
+}
+ 
+.content-section p {
+    margin-bottom: 10px;
+}
+
+#players h3 {
+    font-family: 'RealMadrid', sans-serif;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer img {
+        margin-bottom: 10px;
+    }
+
+    .player {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .player img {
+        margin-left: 0;
+        margin-top: 0.5em;
+    }
+
+}
+
+#team {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#team h2 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#team p {
+    margin-bottom: 10px;
+    text-align: center;
 }

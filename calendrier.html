@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendrier - Madridistas</title>
+    <title>Prochains Matches - Madridistas</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
+        <img src="images/Logo_Real_Madrid.png" alt="Logo_Real_Madrid" width="50px">
+        <img src="images/14_ldc.png" alt="Logo_LDC" width="60px">
         <h1>Madridistas</h1>
         <nav>
             <ul>
@@ -21,15 +23,49 @@
         </nav>
     </header>
     <main>
-        <section id="schedule">
-            <h2>Calendrier des Matches</h2>
-            <p>Liste des matches à venir ici...</p>
+        <section id="next-matches">
+            <h2>Prochains Matches</h2>
+            <ul class="matches-list">
+                <li class="match-item">
+                    <span class="date">Samedi 1er juin 2024</span>
+                    <span class="hour">21H00 (UTC +2)</span>
+                    <br>
+                    <span class="opponent">Borussia Dortmund vs. Real Madrid</span>
+                    <br>
+                    <span class="competition">(Final UEFA Champions League)</span>
+                </li>
+                <li class="match-item">
+                    <span class="date">Mercredi 31 juillet 2024</span>
+                    <span class="hour">13H00 (UTC +2)</span>
+                    <br>
+                    <span class="opponent">Milan AC vs. Real Madrid</span>
+                    <br>
+                    <span class="competition">(Match Amical)</span>
+                </li>
+                <li class="match-item">
+                    <span class="date">Vendredi 2 août 2024</span>
+                    <span class="hour">13H00 (UTC +2)</span>
+                    <br>
+                    <span class="opponent">FC Barcelone vs. Real Madrid</span>
+                    <br>
+                    <span class="competition">(Match Amical)</span>
+                </li>
+                <li class="match-item">
+                    <span class="date">Lundi 5 août 2024</span>
+                    <span class="hour">2H00 (UTC +2)</span>
+                    <br>
+                    <span class="opponent">Chelsea FC vs. Real Madrid</span>
+                    <br>
+                    <span class="competition">(Match Amical)</span>
+                </li>
+            </ul>
         </section>
+        <br>
+        <br>
     </main>
-    <footer>
-        <section id="footer-content">
-            <p>&copy; 2024 Madridistas. Tous droits réservés.</p>
-        </section>
+    <footer id="footer-content">
+        <a href="https://www.realmadrid.com/"><img src="images/Logo_Real_Madrid.png" alt="Logo_Real_Madrid" width="50px"></a>
+        <p>&copy; 2024 Madridistas. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
