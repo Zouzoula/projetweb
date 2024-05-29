@@ -36,6 +36,49 @@ header h1 {
     margin: 0;
 }
 
+main {
+    padding: 2em 1em;
+    margin: 2em auto;
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer img {
+    margin-right: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.content-section {
+    margin-bottom: 20px;
+}
+
+.content-section h2 {
+    margin-bottom: 10px;
+}
+
+.content-section p {
+    margin-bottom: 10px;
+}
+
+/* Connection et Inscription */
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -50,16 +93,6 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-}
-
-main {
-    padding: 2em 1em;
-    margin: 2em auto;
-    max-width: 400px;
-    width: 100%;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
 #inscription {
@@ -129,6 +162,8 @@ main {
     background-color: #004080;
 }
 
+/* Chants */
+
 #videos {
     width: 100%;
     max-width: 800px;
@@ -164,6 +199,8 @@ main {
 .video-item p {
     color: #666;
 }
+
+/* Calendrier */
 
 #next-matches {
     width: 100%;
@@ -217,6 +254,8 @@ main {
     color: #666;
 }
 
+/* Joueurs */
+
 #players {
     width: 100%;
     max-width: 1000px;
@@ -245,12 +284,6 @@ main {
     padding-bottom: 0.5em;
 }
 
-
-#team img {
-    max-width: 100%;
-    height: auto;
-}
-
 .player {
     display: flex;
     align-items: center;
@@ -264,40 +297,11 @@ main {
     height: auto;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    width: 100%;
-    margin-top: auto;
-}
-
-footer img {
-    margin-right: 10px;
-}
-
-footer p {
-    margin: 0;
-}
-
-.content-section {
-    margin-bottom: 20px;
-}
-
-.content-section h2 {
-    margin-bottom: 10px;
-}
-
-.content-section p {
-    margin-bottom: 10px;
-}
-
 #players h3 {
     font-family: 'RealMadrid', sans-serif;
 }
+
+/* Accueil */
 
 #team {
     text-align: center;
@@ -313,6 +317,11 @@ footer p {
 #team p {
     margin-bottom: 10px;
     text-align: center;
+}
+
+#team img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Responsiveness */
