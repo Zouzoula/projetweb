@@ -245,18 +245,6 @@ main {
     padding-bottom: 0.5em;
 }
 
-#team {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: auto; 
-    gap: 10px;
-    justify-content: center;
-    align-items: center; 
-    width: 100%; 
-    height: 400px;
-    background-image: url('chemin/vers/votre/image-de-terrain.jpg'); 
-    background-size: cover; 
-    background-position: center; 
 
 #team img {
     max-width: 100%;
@@ -268,8 +256,6 @@ main {
     align-items: center;
     margin-bottom: 1em;
 }
-
-
 
 .player img {
     margin-left: 1em;
@@ -300,17 +286,33 @@ footer p {
 .content-section {
     margin-bottom: 20px;
 }
- 
+
 .content-section h2 {
     margin-bottom: 10px;
 }
- 
+
 .content-section p {
     margin-bottom: 10px;
 }
 
 #players h3 {
     font-family: 'RealMadrid', sans-serif;
+}
+
+#team {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#team h2 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#team p {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 /* Responsiveness */
@@ -331,6 +333,7 @@ footer p {
 
     footer {
         flex-direction: column;
+        align-items: center; /* Ajout pour centrer le contenu */
     }
 
     footer img {
@@ -339,7 +342,7 @@ footer p {
 
     .player {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center; /* Ajout pour centrer le contenu */
     }
 
     .player img {
@@ -347,20 +350,4 @@ footer p {
         margin-top: 0.5em;
     }
 
-}
-
-#team {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-#team h2 {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-#team p {
-    margin-bottom: 10px;
-    text-align: center;
 }
