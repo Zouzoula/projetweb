@@ -34,17 +34,49 @@ header h1 {
     flex-grow: 1;
     text-align: center;
     margin: 0;
+    letter-spacing: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 0px 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+nav ul li a:hover {
+    color: #b59e6a;
 }
 
 main {
     padding: 2em 1em;
     margin: 2em auto;
-    max-width: 1000px;
+    max-width: 800px;
     width: 100%;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 8px;    
 }
+#form{
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'RealMadrid', sans-serif;
+    font-size: xx-large;
+    letter-spacing: 2px;
+}
+
 
 footer {
     background-color: #333;
@@ -77,32 +109,28 @@ footer p {
     font-size: x-large;
 }
 
+.content-section a {
+    text-decoration: none;
+    color: #004080;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+.content-section a:hover {
+    color: #b59e6a;
+}
 .content-section p {
     margin-bottom: 10px;
 }
 
-h2 {
-    font-family: 'RealMadrid', sans-serif;
-    font-size: xx-large;
+.logo_foot {
+    transition: 0.3s ease-in-out;
+}
+
+.logo_foot:hover {
+    transform: rotate(45deg);
 }
 
 /* Connection et Inscription */
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 0 1em;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
 
 #inscription {
     width: 100%;
@@ -283,23 +311,16 @@ nav ul li a {
 
 #players h2 {
     text-align: center;
-    color: #00529F;
+    color: #333;
     margin-bottom: 1.5em;
     font-size: xx-large;
-    border-bottom: 2px solid #00529F;
+    border-bottom: 2px solid black;
 
 }
 
 #players .coach,
 #players .player-category {
     margin-bottom: 2em;
-}
-
-.player-category h3 {
-    color: #00529F;
-    margin-bottom: 1em;
-    border-bottom: 2px solid #00529F;
-    padding-bottom: 0.5em;
 }
 
 .player , .coach {
@@ -327,6 +348,32 @@ nav ul li a {
 #players h3 {
     font-family: 'RealMadrid', sans-serif;
     font-size: x-large;
+}
+.blop_E{
+    background: #004599;
+    border-radius: 22px ;
+    height: 36px;
+}
+.blop_G{
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.595),#bde78d, #bde78d); */
+    background-color: #bde78d;
+    border-radius: 22px 22px 0px 0px; 
+    height: 36px;
+}
+.blop_D{
+    background: #b59e6a;
+    border-radius: 22px ;
+    height: 36px;
+}
+.blop_M{
+    background: #b59e6a;
+    border-radius: 22px ;
+    height: 36px;
+}
+.blop_A{
+    background: #b59e6a;
+    border-radius: 22px ;
+    height: 36px;
 }
 
 
@@ -358,16 +405,50 @@ nav ul li a {
 }
 
 /* Responsiveness */
-@media (max-width: 768px) {
+/* @media (max-width: 1280px){
+    main {
+        padding: 2em 1em;
+        margin: 2em auto;
+        max-width: 1000px;
+        width: 100%;
+    }
+} */
+
+@media (max-width: 1024px){
+    .logo_M{
+        display: none;
+
+    }
+    .logo_LDC{
+        display: none;
+    }
+    main {
+        padding: 2em 1em;
+        margin: 2em auto;
+        max-width: 700px;
+        width: 100%;
+    }
+}
+@media (max-width: 900px) {
+    
     header {
         flex-direction: column;
         text-align: center;
         }
+
+    main {
+        padding: 2em 1em;
+        margin: 2em auto;
+        max-width: 400px;
+        width: 100%;
+    }
         
     nav ul {
-        flex-direction: column;
+        flex-direction: raw;
+        gap: 10px;
         align-items: center;
     }
+    
 
     nav ul li {
         margin: 5px 0;
@@ -393,3 +474,13 @@ nav ul li a {
     }
 
 }
+
+@media (max-width: 630px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+}
+

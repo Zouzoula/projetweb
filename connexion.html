@@ -8,8 +8,8 @@
 </head>
 <body>
     <header>
-        <img src="images/Logo_Real_Madrid.png" alt="Logo_Real_Madrid" width="50px">
-        <img src="images/14_ldc.png" alt="Logo_LDC" width="60px">
+        <img class="logo_M" src="images/Logo_Real_Madrid.png" alt="Logo Real Madrid" width="50px">
+        <img class="logo_LDC" src="images/14_ldc.png" alt="Logo LDC" width="60px">
         <h1>Madridistas</h1>
         <nav>
             <ul>
@@ -23,25 +23,28 @@
         </nav>
     </header>
     <main>
-        <section id="login">
-            <h2>Connexion</h2>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="username">Nom d'utilisateur:</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Mot de passe:</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <div class="form-group">
-                    <button type="submit">Se connecter</button>
-                </div>
-            </form>
+        <section id="form">
+            <article id="login">
+                <h2>Connexion</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="username">Nom d'utilisateur:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mot de passe:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Se connecter</button>
+                    </div>
+                </form>
+            </article>
         </section>
     </main>
     <footer id="footer-content">
-        <a href="https://www.realmadrid.com/"><img src="images/Logo_Real_Madrid.png" alt="Logo_Real_Madrid" width="50px"></a>
+        <a class="logo_foot" href="#"><img src="images/Logo_Real_Madrid.png" alt="Logo Real Madrid" width="50px"></a>
+        <!-- <a href="https://www.realmadrid.com/"><img src="images/Logo_Real_Madrid.png" alt="Logo Real Madrid" width="50px"></a> -->
         <p>&copy; 2024 Madridistas. Tous droits réservés.</p>
     </footer>
 </body>
