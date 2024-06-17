@@ -1,9 +1,11 @@
+/* Définit une nouvelle police appelée 'RealMadrid' en spécifiant les formats de police disponibles (woff2 et truetype) */
 @font-face {
     font-family: 'RealMadrid';
     src: url('/css/real-madrid-2022.woff2') format('woff2'),
          url('/css/real-madrid-2022.ttf') format('truetype');
 }
 
+/* Applique des styles de base au corps de la page */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,6 +17,7 @@ body {
     min-height: 100vh;
 }
 
+/* Applique des styles à l'en-tête de la page */
 header {
     font-family: 'RealMadrid', sans-serif;
     font-size: x-large;
@@ -26,16 +29,20 @@ header {
     justify-content: space-between;
 }
 
+/* Applique des marges à l'image dans l'en-tête */
 header img {
     margin-right: 10px;
 }
 
+/* Centre le texte du titre dans l'en-tête */
 header h1 {
     flex-grow: 1;
     text-align: center;
     margin: 0;
     letter-spacing: 10px;
 }
+
+/* Supprime les puces des éléments de la liste dans la navigation et les affiche en ligne */
 nav ul {
     list-style: none;
     padding: 0;
@@ -43,20 +50,25 @@ nav ul {
     margin: 0;
 }
 
+/* Applique des marges aux éléments de la liste dans la navigation */
 nav ul li {
     padding: 0px 5px;
 }
 
+/* Définit les styles pour les liens dans la navigation */
 nav ul li a {
     color: white;
     text-decoration: none;
     transition: 0.3s ease-in-out;
     letter-spacing: 1px;
 }
+
+/* Change la couleur des liens de navigation au survol */
 nav ul li a:hover {
     color: #b59e6a;
 }
 
+/* Applique des styles à la section principale */
 main {
     padding: 2em 1em;
     margin: 2em auto;
@@ -66,18 +78,21 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;    
 }
+
+/* Centre le formulaire à l'intérieur de son conteneur */
 #form{
     display: flex;
     justify-content: center;
 }
 
+/* Applique des styles aux titres h2 */
 h2 {
     font-family: 'RealMadrid', sans-serif;
     font-size: xx-large;
     letter-spacing: 2px;
 }
 
-
+/* Applique des styles au pied de page */
 footer {
     background-color: #333;
     color: white;
@@ -89,18 +104,22 @@ footer {
     margin-top: auto;
 }
 
+/* Applique des marges aux images dans le pied de page */
 footer img {
     margin-right: 10px;
 }
 
+/* Supprime les marges des paragraphes dans le pied de page */
 footer p {
     margin: 0;
 }
 
+/* Applique des marges aux sections de contenu */
 .content-section {
     margin-bottom: 20px;
 }
 
+/* Applique des styles aux titres h2 dans les sections de contenu */
 .content-section h2 {
     margin-bottom: 10px;
     font-family: 'RealMadrid', sans-serif;
@@ -109,29 +128,37 @@ footer p {
     font-size: x-large;
 }
 
+/* Applique des styles aux liens dans les sections de contenu */
 .content-section a {
     text-decoration: none;
     color: #004080;
     font-weight: 600;
     transition: 0.2s ease-in-out;
 }
+
+/* Change la couleur des liens au survol dans les sections de contenu */
 .content-section a:hover {
     color: #b59e6a;
 }
+
+/* Applique des marges aux paragraphes dans les sections de contenu */
 .content-section p {
     margin-bottom: 10px;
 }
 
+/* Applique des effets de transition aux logos dans le pied de page */
 .logo_foot {
     transition: 0.3s ease-in-out;
 }
 
+/* Fait pivoter les logos dans le pied de page au survol */
 .logo_foot:hover {
     transform: rotate(45deg);
 }
 
-/* Connection et Inscription */
+/* Formulaires de connexion et d'inscription */
 
+/* Applique des styles au conteneur du formulaire d'inscription */
 #inscription {
     width: 100%;
     max-width: 400px;
@@ -142,6 +169,7 @@ footer p {
     box-sizing: border-box;
 }
 
+/* Applique des styles aux titres h2 dans le formulaire d'inscription */
 #inscription h2 {
     text-align: center;
     color: #00529F;
@@ -149,6 +177,7 @@ footer p {
     border-bottom: 2px solid #00529F;
 }
 
+/* Applique des styles au conteneur du formulaire de connexion */
 #login {
     width: 100%;
     max-width: 400px;
@@ -159,6 +188,7 @@ footer p {
     box-sizing: border-box;
 }
 
+/* Applique des styles aux titres h2 dans le formulaire de connexion */
 #login h2 {
     text-align: center;
     color: #00529F;
@@ -166,16 +196,19 @@ footer p {
     border-bottom: 2px solid #00529F;
 }
 
+/* Applique des marges aux groupes de formulaires */
 .form-group {
     margin-bottom: 1.5em;
 }
 
+/* Applique des marges et des styles aux étiquettes dans les groupes de formulaires */
 .form-group label {
     display: block;
     margin-bottom: 0.5em;
     color: #333;
 }
 
+/* Applique des styles aux champs de saisie dans les groupes de formulaires */
 .form-group input {
     width: 100%;
     padding: 0.75em;
@@ -185,6 +218,7 @@ footer p {
     box-sizing: border-box;
 }
 
+/* Applique des styles aux boutons dans les groupes de formulaires */
 .form-group button {
     width: 100%;
     padding: 0.75em;
@@ -197,12 +231,14 @@ footer p {
     transition: background-color 0.3s ease;
 }
 
+/* Change la couleur de fond des boutons au survol */
 .form-group button:hover {
     background-color: #004080;
 }
 
 /* Chants */
 
+/* Applique des styles au conteneur des vidéos */
 #videos {
     width: 100%;
     max-width: 800px;
@@ -213,23 +249,26 @@ footer p {
     box-sizing: border-box;
 }
 
+/* Applique des styles aux titres h2 dans le conteneur des vidéos */
 #videos h2 {
     text-align: center;
     color: #00529F;
     margin-bottom: 1.5em;
     border-bottom: 2px solid #00529F;
-
 }
 
+/* Applique des marges aux éléments vidéo */
 .video-item {
     margin-bottom: 2em;
 }
 
+/* Applique des styles aux titres h4 dans les éléments vidéo */
 .video-item h4 {
     color: #333;
     margin-bottom: 0.5em;
 }
 
+/* Applique des styles aux vidéos */
 .video-item video {
     width: 100%;
     height: auto;
@@ -237,12 +276,14 @@ footer p {
     margin-bottom: 0.5em;
 }
 
+/* Applique des styles aux paragraphes dans les éléments vidéo */
 .video-item p {
     color: #666;
 }
 
 /* Calendrier */
 
+/* Applique des styles au conteneur des prochains matchs */
 #next-matches {
     width: 100%;
     max-width: 800px;
@@ -253,20 +294,22 @@ footer p {
     box-sizing: border-box;
 }
 
+/* Applique des styles aux titres h2 dans le conteneur des prochains matchs */
 #next-matches h2 {
     text-align: center;
     color: #00529F;
     margin-bottom: 1.5em;
     border-bottom: 2px solid #00529F;
-
 }
 
+/* Supprime les puces des éléments de la liste des matchs */
 .matches-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
+/* Applique des styles aux éléments individuels des matchs */
 .match-item {
     background: #f9f9f9;
     padding: 1em;
@@ -275,6 +318,7 @@ footer p {
     border-radius: 4px;
 }
 
+/* Applique des styles aux dates, heures, adversaires et compétitions des matchs */
 .match-item .date,
 .match-item .hour,
 .match-item .opponent,
@@ -283,22 +327,26 @@ footer p {
     margin-bottom: 0.5em;
 }
 
+/* Applique des styles spécifiques aux dates et heures des matchs */
 .match-item .date,
 .match-item .hour {
     color: #00529F;
     font-weight: bold;
 }
 
+/* Applique des styles aux adversaires des matchs */
 .match-item .opponent {
     color: #333;
 }
 
+/* Applique des styles aux compétitions des matchs */
 .match-item .competition {
     color: #666;
 }
 
 /* Joueurs */
 
+/* Applique des styles au conteneur des joueurs */
 #players {
     width: 100%;
     max-width: 1000px;
@@ -309,20 +357,22 @@ footer p {
     box-sizing: border-box;
 }
 
+/* Applique des styles aux titres h2 dans le conteneur des joueurs */
 #players h2 {
     text-align: center;
     color: #333;
     margin-bottom: 1.5em;
     font-size: xx-large;
     border-bottom: 2px solid black;
-
 }
 
+/* Applique des marges aux conteneurs des coachs et catégories de joueurs */
 #players .coach,
 #players .player-category {
     margin-bottom: 2em;
 }
 
+/* Applique des styles aux éléments individuels des joueurs et des coachs */
 .player , .coach {
     display: flex;
     flex-direction: column; 
@@ -333,91 +383,99 @@ footer p {
     font-size: large;
 }
 
+/* Applique des styles aux images des joueurs */
 .player img {
     border-radius: 8px;
     height: auto;
     margin-bottom: 0.5em; 
 }
 
+/* Applique des styles aux images des coachs */
 .coach img {
     border-radius: 8px;
     height: auto;
     margin-bottom: 0.5em; /
 }
 
+/* Applique des styles aux titres h3 */
 #players h3 {
     font-family: 'RealMadrid', sans-serif;
     font-size: x-large;
 }
+
+/* Applique des styles aux blocs d'éléments (blop) */
 .blop_E{
     background: #004599;
     border-radius: 22px ;
     height: 36px;
 }
+
+/* Applique des styles aux blocs de gardiens (blop_G) */
 .blop_G{
-    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.595),#bde78d, #bde78d); */
     background-color: #bde78d;
     border-radius: 22px 22px 0px 0px; 
     height: 36px;
 }
+
+/* Applique des styles aux blocs de défenseurs (blop_D) */
 .blop_D{
     background: #b59e6a;
     border-radius: 22px ;
     height: 36px;
 }
+
+/* Applique des styles aux blocs de milieux de terrain (blop_M) */
 .blop_M{
     background: #b59e6a;
     border-radius: 22px ;
     height: 36px;
 }
+
+/* Applique des styles aux blocs d'attaquants (blop_A) */
 .blop_A{
     background: #b59e6a;
     border-radius: 22px ;
     height: 36px;
 }
 
-
 /* Accueil */
 
+/* Applique des styles au conteneur de l'équipe */
 #team {
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 
+/* Applique des styles aux titres h2 dans le conteneur de l'équipe */
 #team h2 {
     margin-bottom: 20px;
     text-align: left;
 }
 
+/* Applique des styles aux paragraphes dans le conteneur de l'équipe */
 #team p {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* Applique des styles aux images dans le conteneur de l'équipe */
 #team img {
     max-width: 100%;
     height: auto;
 }
 
+/* Applique des styles spécifiques à la source des compositions */
 #team p#source_compo {
     font-size: small;
 }
 
 /* Responsiveness */
-/* @media (max-width: 1280px){
-    main {
-        padding: 2em 1em;
-        margin: 2em auto;
-        max-width: 1000px;
-        width: 100%;
-    }
-} */
 
+/* Styles pour les écrans de moins de 1024px */
 @media (max-width: 1024px){
     .logo_M{
         display: none;
-
     }
     .logo_LDC{
         display: none;
@@ -429,58 +487,72 @@ footer p {
         width: 100%;
     }
 }
+
+/* Styles pour les écrans de moins de 900px */
 @media (max-width: 900px) {
-    
+
+    /* Réorganise les éléments du header en colonne et centre le texte */
     header {
         flex-direction: column;
         text-align: center;
-        }
+    }
 
+    /* Ajuste les marges et les paddings du main pour une meilleure lisibilité sur petits écrans */
     main {
         padding: 2em 1em;
         margin: 2em auto;
         max-width: 400px;
         width: 100%;
     }
-        
+
+    /* Change la direction du menu de navigation en ligne et centre les éléments */
     nav ul {
-        flex-direction: raw;
+        flex-direction: row;
         gap: 10px;
         align-items: center;
     }
-    
 
+    /* Ajoute des marges aux éléments de la liste de navigation pour espacer les items */
     nav ul li {
         margin: 5px 0;
     }
 
+    /* Réorganise les éléments du footer en colonne et centre les éléments */
     footer {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
 
+    /* Ajoute une marge inférieure aux images dans le footer pour espacer les éléments */
     footer img {
         margin-bottom: 10px;
     }
 
+    /* Réorganise les éléments des joueurs en colonne et centre les éléments */
     .player {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
 
+    /* Ajuste les marges des images des joueurs pour les centrer et ajouter un espace au-dessus */
     .player img {
         margin-left: 0;
         margin-top: 0.5em;
     }
-
 }
 
-@media (max-width: 630px) {
 
+/* Styles pour les écrans de moins de 630px */
+@media (max-width: 630px) {
     nav ul {
         flex-direction: column;
         gap: 5px;
         align-items: center;
     }
 }
-
+/* Styles pour les écrans de moins de 340px */
+@media (max-width: 340px) {
+    header h1 {
+        font-size: xx-large;
+    }
+}
