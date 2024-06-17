@@ -383,36 +383,55 @@ footer p {
     font-size: large;
 }
 
+
 /* Applique des styles aux images des joueurs */
 .player img {
     border-radius: 8px;
     height: auto;
     margin-bottom: 0.5em; 
+    background-color: #f0f0f0; 
+    padding: 10px; 
 }
 
 /* Applique des styles aux images des coachs */
 .coach img {
     border-radius: 8px;
     height: auto;
-    margin-bottom: 0.5em; /
+    margin-bottom: 0.5em; 
+    background-color: #f0f0f0; 
+    padding: 10px; 
 }
 
-/* Applique des styles aux titres h3 */
-#players h3 {
-    font-family: 'RealMadrid', sans-serif;
-    font-size: x-large;
+/* Stylise les noms des joueurs */
+.player h4 {
+    background-color: #b59e6a;
+    padding: 10px;
+    border-radius: 22px;
+    color: #333;
+    border-bottom: 2px solid black;
 }
 
-/* Applique des styles aux blocs d'éléments (blop) */
+/* Stylise les noms des coachs */
+.coach h4 {
+    background-color: #b59e6a;
+    padding: 10px;
+    border-radius: 22px; 
+    color: #333;
+    border-bottom: 2px solid black;
+}
+
+
+
+/* Applique des styles aux blocs de l'entraineur (blop) */
 .blop_E{
-    background: #004599;
+    background: #b59e6a;
     border-radius: 22px ;
     height: 36px;
 }
 
 /* Applique des styles aux blocs de gardiens (blop_G) */
 .blop_G{
-    background-color: #bde78d;
+    background-color: #b59e6a;
     border-radius: 22px 22px 0px 0px; 
     height: 36px;
 }
@@ -437,6 +456,7 @@ footer p {
     border-radius: 22px ;
     height: 36px;
 }
+
 
 /* Accueil */
 
